@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Drishti Jain - First-Year B.Tech Student at Newton School of Technology. Passionate about technology, creativity, and building innovative digital experiences." />
+  <meta name="keywords" content="Drishti Jain, Portfolio, Newton School of Technology, B.Tech, Computer Science, Web Developer, Tech Enthusiast" />
+  <meta name="author" content="Drishti Jain" />
+  <title>Drishti Jain | Portfolio & Tech Journey</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✨</text></svg>" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Ambient Cursor Glow Effect -->
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- Background Decorative Shapes -->
+  <div class="bg-shape shape-1"></div>
+  <div class="bg-shape shape-2"></div>
+  <div class="bg-shape shape-3"></div>
+
+  <!-- Navigation Bar -->
+  <header class="navbar-wrapper" id="header">
+    <nav class="navbar container">
+      <a href="#home" class="nav-brand">
+        <span class="brand-badge">DJ</span>
+        <span class="brand-name">Drishti<span class="accent-dot">.</span></span>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <!-- Theme Toggle Button -->
+        <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark/light theme" title="Toggle theme">
+          <i class="fa-solid fa-moon moon-icon"></i>
+          <i class="fa-solid fa-sun sun-icon"></i>
+        </button>
+
+        <a href="#contact" class="btn btn-sm btn-outline nav-cta">Let's Talk</a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Mobile Navigation Overlay Drawer -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <div class="mobile-drawer-header">
+      <div class="nav-brand">
+        <span class="brand-badge">DJ</span>
+        <span class="brand-name">Drishti<span class="accent-dot">.</span></span>
+      </div>
+      <button class="drawer-close" id="drawerClose" aria-label="Close menu">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+    <ul class="mobile-nav-links">
+      <li><a href="#home" class="mobile-nav-link">Home</a></li>
+      <li><a href="#about" class="mobile-nav-link">About</a></li>
+      <li><a href="#skills" class="mobile-nav-link">Skills</a></li>
+      <li><a href="#education" class="mobile-nav-link">Education</a></li>
+      <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
+      <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+    </ul>
+    <div class="mobile-drawer-footer">
+      <a href="#contact" class="btn btn-primary btn-block">Say Hello <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+  </div>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="badge-pill">
+            <span class="badge-pulse"></span>
+            <span>First-Year B.Tech @ Newton School of Technology</span>
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I'm <span class="gradient-text">Drishti Jain</span>
+            <br />
+            <span class="typewriter-prefix">I am a </span>
+            <span class="typewriter-text" id="typewriter"></span>
+            <span class="typewriter-cursor">|</span>
+          </h1>
+
+          <p class="hero-description">
+            Passionate and ambitious learner exploring the frontiers of technology, creativity, and innovation. 
+            Curious about how modern tech shapes the future, eager to code, build impactful projects, and turn bold ideas into elegant realities.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">
+              <span>Explore My Work</span>
+              <i class="fa-solid fa-arrow-down-long"></i>
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <span>Get In Touch</span>
+              <i class="fa-solid fa-paper-plane"></i>
+            </a>
+            <button class="btn btn-ghost" id="cvDownloadBtn" title="Download Resume">
+              <i class="fa-solid fa-file-lines"></i>
+              <span>Resume</span>
+            </button>
+          </div>
+
+          <div class="hero-metrics">
+            <div class="metric-item">
+              <span class="metric-number">1st</span>
+              <span class="metric-label">Year B.Tech @ NST</span>
+            </div>
+            <div class="metric-divider"></div>
+            <div class="metric-item">
+              <span class="metric-number">100%</span>
+              <span class="metric-label">Curiosity & Passion</span>
+            </div>
+            <div class="metric-divider"></div>
+            <div class="metric-item">
+              <span class="metric-number">Open</span>
+              <span class="metric-label">For Collaborations</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="card-glass profile-showcase">
+            <div class="profile-glow"></div>
+            <div class="avatar-frame">
+              <!-- Illustrated SVG Avatar with Modern Tech Aesthetic -->
+              <div class="avatar-inner">
+                <svg viewBox="0 0 200 200" class="avatar-svg" xmlns="http://www.w3.org/2000/svg">
+                  <defs>
+                    <linearGradient id="avatarGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" stop-color="#8b5cf6" />
+                      <stop offset="50%" stop-color="#ec4899" />
+                      <stop offset="100%" stop-color="#3b82f6" />
+                    </linearGradient>
+                    <linearGradient id="skinGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" stop-color="#ffd5b8" />
+                      <stop offset="100%" stop-color="#f5b991" />
+                    </linearGradient>
+                  </defs>
+                  <!-- Background Circle -->
+                  <circle cx="100" cy="100" r="94" fill="url(#avatarGrad)" opacity="0.25" />
+                  <circle cx="100" cy="100" r="85" fill="#131b2e" />
+                  
+                  <!-- Hair Back -->
+                  <path d="M 52 110 C 48 65, 80 40, 100 40 C 120 40, 152 65, 148 110 C 145 130, 140 148, 138 160 L 62 160 C 60 148, 55 130, 52 110 Z" fill="#2d1e3d" />
+                  
+                  <!-- Neck & Shoulders -->
+                  <path d="M 85 135 L 85 155 L 115 155 L 115 135 Z" fill="url(#skinGrad)" />
+                  <path d="M 55 160 C 70 148, 130 148, 145 160 C 158 172, 162 188, 162 195 L 38 195 C 38 188, 42 172, 55 160 Z" fill="#6366f1" />
+                  
+                  <!-- Face -->
+                  <ellipse cx="100" cy="105" rx="36" ry="42" fill="url(#skinGrad)" />
+                  
+                  <!-- Hair Front & Bangs -->
+                  <path d="M 64 88 C 64 68, 80 50, 100 50 C 120 50, 136 68, 136 88 C 130 78, 115 72, 100 72 C 85 72, 70 78, 64 88 Z" fill="#442a5a" />
+                  <path d="M 64 88 C 62 108, 65 125, 70 135 C 72 125, 75 110, 75 95 Z" fill="#442a5a" />
+                  <path d="M 136 88 C 138 108, 135 125, 130 135 C 128 125, 125 110, 125 95 Z" fill="#442a5a" />
+                  
+                  <!-- Eyes -->
+                  <ellipse cx="88" cy="104" rx="4.5" ry="5.5" fill="#1e1b4b" />
+                  <ellipse cx="112" cy="104" rx="4.5" ry="5.5" fill="#1e1b4b" />
+                  <circle cx="89.5" cy="102" r="1.5" fill="#ffffff" />
+                  <circle cx="113.5" cy="102" r="1.5" fill="#ffffff" />
+                  
+                  <!-- Eyebrows -->
+                  <path d="M 82 95 Q 88 92 94 95" stroke="#2d1e3d" stroke-width="2.5" fill="none" stroke-linecap="round" />
+                  <path d="M 106 95 Q 112 92 118 95" stroke="#2d1e3d" stroke-width="2.5" fill="none" stroke-linecap="round" />
+                  
+                  <!-- Smile -->
+                  <path d="M 92 124 Q 100 132 108 124" stroke="#c2410c" stroke-width="2.5" fill="none" stroke-linecap="round" />
+                  
+                  <!-- Cheeks blush -->
+                  <circle cx="82" cy="116" r="5" fill="#f43f5e" opacity="0.3" />
+                  <circle cx="118" cy="116" r="5" fill="#f43f5e" opacity="0.3" />
+                  
+                  <!-- Glasses / Tech accessory -->
+                  <rect x="76" y="96" width="22" height="17" rx="5" fill="none" stroke="#a855f7" stroke-width="2.2" />
+                  <rect x="102" y="96" width="22" height="17" rx="5" fill="none" stroke="#a855f7" stroke-width="2.2" />
+                  <line x1="98" y1="104" x2="102" y2="104" stroke="#a855f7" stroke-width="2.2" />
+                </svg>
+              </div>
+            </div>
+
+            <!-- Floating Tech Badges -->
+            <div class="floating-badge badge-top-left">
+              <i class="fa-brands fa-html5" style="color: #f97316;"></i>
+              <span>HTML5 & CSS3</span>
+            </div>
+
+            <div class="floating-badge badge-top-right">
+              <i class="fa-solid fa-code" style="color: #60a5fa;"></i>
+              <span>Coder & Builder</span>
+            </div>
+
+            <div class="floating-badge badge-bottom-left">
+              <i class="fa-solid fa-brain" style="color: #a855f7;"></i>
+              <span>Problem Solver</span>
+            </div>
+
+            <div class="floating-badge badge-bottom-right">
+              <i class="fa-solid fa-graduation-cap" style="color: #10b981;"></i>
+              <span>Newton School</span>
+            </div>
+
+            <!-- Profile Info Footer in Card -->
+            <div class="profile-card-footer">
+              <div class="status-indicator">
+                <span class="status-dot"></span>
+                <span>Active Learner • Open to Innovation</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">About Me</span>
+          <h2 class="section-title">Driven by Curiosity, Powered by Passion</h2>
+          <p class="section-subtitle">
+            A glimpse into who I am, my philosophy as a student of technology, and what drives my journey.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-story card-glass">
+            <h3 class="about-story-title">
+              <i class="fa-solid fa-sparkles accent-color"></i> My Story & Journey
+            </h3>
+            <p>
+              Hello! I'm <strong>Drishti Jain</strong>, currently a first-year undergraduate pursuing my Bachelor of Technology (B.Tech) at <strong>Newton School of Technology</strong>.
+            </p>
+            <p>
+              I believe that technology is the ultimate canvas for creativity. From writing my first lines of code to building web interfaces and exploring algorithm logic, I find immense excitement in understanding how software can solve real-world problems.
+            </p>
+            <p>
+              As a curious and ambitious learner, I don't just study concepts to pass exams—I love rolling up my sleeves, testing new ideas, experimenting with design, and continuously learning new things every single day.
+            </p>
+
+            <div class="about-highlights">
+              <div class="highlight-item">
+                <div class="highlight-icon"><i class="fa-solid fa-compass"></i></div>
+                <div>
+                  <h4>Curiosity First</h4>
+                  <p>Always asking "How does this work?" and diving deep into new tech stacks.</p>
+                </div>
+              </div>
+              <div class="highlight-item">
+                <div class="highlight-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                <div>
+                  <h4>Creative Mindset</h4>
+                  <p>Blending clean aesthetics with functional code to build delightful experiences.</p>
+                </div>
+              </div>
+              <div class="highlight-item">
+                <div class="highlight-icon"><i class="fa-solid fa-rocket"></i></div>
+                <div>
+                  <h4>Ambition to Grow</h4>
+                  <p>Constantly seeking challenges, hackathons, and collaborative projects.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-cards-column">
+            <!-- Quick Facts Card -->
+            <div class="card-glass quick-facts-card">
+              <h3 class="card-inner-title"><i class="fa-solid fa-user-astronaut"></i> Quick Facts</h3>
+              <ul class="facts-list">
+                <li>
+                  <span class="fact-label"><i class="fa-solid fa-user"></i> Name:</span>
+                  <span class="fact-value">Drishti Jain</span>
+                </li>
+                <li>
+                  <span class="fact-label"><i class="fa-solid fa-building-columns"></i> University:</span>
+                  <span class="fact-value">Newton School of Technology</span>
+                </li>
+                <li>
+                  <span class="fact-label"><i class="fa-solid fa-book-bookmark"></i> Degree:</span>
+                  <span class="fact-value">B.Tech (1st Year)</span>
+                </li>
+                <li>
+                  <span class="fact-label"><i class="fa-solid fa-heart"></i> Core Passions:</span>
+                  <span class="fact-value">Tech, Creativity, Innovation</span>
+                </li>
+                <li>
+                  <span class="fact-label"><i class="fa-solid fa-laptop-code"></i> Main Focus:</span>
+                  <span class="fact-value">Web Dev, Coding & Problem Solving</span>
+                </li>
+                <li>
+                  <span class="fact-label"><i class="fa-solid fa-location-dot"></i> Location:</span>
+                  <span class="fact-value">India</span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Learning Philosophy Banner -->
+            <div class="card-glass quote-card">
+              <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+              <blockquote class="quote-text">
+                "Learning is not just about accumulating knowledge; it's about igniting the courage to create what didn't exist yesterday."
+              </blockquote>
+              <div class="quote-author">— Drishti Jain</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills & Toolkit Section -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">My Toolkit</span>
+          <h2 class="section-title">Skills & Technologies</h2>
+          <p class="section-subtitle">
+            Tools, languages, and competencies I'm currently mastering and applying in projects.
+          </p>
+        </div>
+
+        <!-- Filter tabs for skills -->
+        <div class="filter-tabs-wrapper">
+          <div class="filter-tabs" id="skillFilters">
+            <button class="filter-tab active" data-category="all">All Skills</button>
+            <button class="filter-tab" data-category="frontend">Frontend & Web</button>
+            <button class="filter-tab" data-category="programming">Programming</button>
+            <button class="filter-tab" data-category="tools">Tools & Creative</button>
+          </div>
+        </div>
+
+        <div class="skills-grid" id="skillsGrid">
+          <!-- Skill: HTML5 -->
+          <div class="skill-card card-glass" data-category="frontend">
+            <div class="skill-header">
+              <div class="skill-icon html-icon"><i class="fa-brands fa-html5"></i></div>
+              <div class="skill-info">
+                <h4 class="skill-name">HTML5</h4>
+                <span class="skill-level">Semantic & Accessible</span>
+              </div>
+            </div>
+            <p class="skill-desc">Structuring modern, responsive, and clean web documents with semantic markup.</p>
+            <div class="skill-progress-bar">
+              <div class="progress-fill" style="width: 88%;"></div>
+            </div>
+          </div>
+
+          <!-- Skill: CSS3 -->
+          <div class="skill-card card-glass" data-category="frontend">
+            <div class="skill-header">
+              <div class="skill-icon css-icon"><i class="fa-brands fa-css3-alt"></i></div>
+              <div class="skill-info">
+                <h4 class="skill-name">CSS3 & Styling</h4>
+                <span class="skill-level">Flexbox, Grid, Animations</span>
+              </div>
+            </div>
+            <p class="skill-desc">Crafting beautiful UI, responsive layouts, glassmorphic themes, and micro-interactions.</p>
+            <div class="skill-progress-bar">
+              <div class="progress-fill" style="width: 85%;"></div>
+            </div>
+          </div>
+
+          <!-- Skill: JavaScript -->
+          <div class="skill-card card-glass" data-category="frontend programming">
+            <div class="skill-header">
+              <div class="skill-icon js-icon"><i class="fa-brands fa-js"></i></div>
+              <div class="skill-info">
+                <h4 class="skill-name">JavaScript (ES6+)</h4>
+                <span class="skill-level">Interactive & Logic</span>
+              </div>
+            </div>
+            <p class="skill-desc">DOM manipulation, event handling, asynchronous operations, and dynamic UI states.</p>
+            <div class="skill-progress-bar">
+              <div class="progress-fill" style="width: 75%;"></div>
+            </div>
+          </div>
+
+          <!-- Skill: Python -->
+          <div class="skill-card card-glass" data-category="programming">
+            <div class="skill-header">
+              <div class="skill-icon python-icon"><i class="fa-brands fa-python"></i></div>
+              <div class="skill-info">
+                <h4 class="skill-name">Python</h4>
+                <span class="skill-level">Fundamentals & Problem Solving</span>
+              </div>
+            </div>
+            <p class="skill-desc">Core programming, algorithm logic, scripting, and foundational data manipulation.</p>
+            <div class="skill-progress-bar">
+              <div class="progress-fill" style="width: 80%;"></div>
+            </div>
+          </div>
+
+          <!-- Skill: C/C++ -->
+          <div class="skill-card card-glass" data-category="programming">
+            <div class="skill-header">
+              <div class="skill-icon cpp-icon"><i class="fa-solid fa-code"></i></div>
+              <div class="skill-info">
+                <h4 class="skill-name">C / C++ Basics</h4>
+                <span class="skill-level">Computer Science Core</span>
+              </div>
+            </div>
+            <p class="skill-desc">Understanding memory, pointers, system architecture, and basic algorithmic complexity.</p>
+            <div class="skill-progress-bar">
+              <div class="progress-fill" style="width: 70%;"></div>
+            </div>
+          </div>
+
+          <!-- Skill: Git & GitHub -->
+          <div class="skill-card card-glass" data-category="tools">
+            <div class="skill-header">
+              <div class="skill-icon git-icon"><i class="fa-brands fa-github"></i></div>
+              <div class="skill-info">
+                <h4 class="skill-name">Git & GitHub</h4>
+                <span class="skill-level">Version Control</span>
+              </div>
+            </div>
+            <p class="skill-desc">Managing code repositories, commits, branching workflows, and open-source collaboration.</p>
+            <div class="skill-progress-bar">
+              <div class="progress-fill" style="width: 82%;"></div>
+            </div>
+          </div>
+
+          <!-- Skill: UI/UX & Figma -->
+          <div class="skill-card card-glass" data-category="tools frontend">
+            <div class="skill-header">
+              <div class="skill-icon figma-icon"><i class="fa-brands fa-figma"></i></div>
+              <div class="skill-info">
+                <h4 class="skill-name">UI/UX & Wireframing</h4>
+                <span class="skill-level">Design Thinking</span>
+              </div>
+            </div>
+            <p class="skill-desc">Wireframing, typography, color harmony, user-centric interfaces, and modern layouts.</p>
+            <div class="skill-progress-bar">
+              <div class="progress-fill" style="width: 78%;"></div>
+            </div>
+          </div>
+
+          <!-- Skill: Creative Innovation & Problem Solving -->
+          <div class="skill-card card-glass" data-category="tools">
+            <div class="skill-header">
+              <div class="skill-icon creative-icon"><i class="fa-solid fa-lightbulb"></i></div>
+              <div class="skill-info">
+                <h4 class="skill-name">Innovation & Teamwork</h4>
+                <span class="skill-level">Soft Skills</span>
+              </div>
+            </div>
+            <p class="skill-desc">Creative ideation, rapid prototyping, agile communication, and relentless curiosity.</p>
+            <div class="skill-progress-bar">
+              <div class="progress-fill" style="width: 92%;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education & Milestones Section -->
+    <section class="section education-section" id="education">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Academic Background</span>
+          <h2 class="section-title">Education & Milestones</h2>
+          <p class="section-subtitle">
+            The foundation of my academic learning and technical training.
+          </p>
+        </div>
+
+        <div class="timeline-wrapper">
+          <div class="timeline">
+            <!-- Item 1: Newton School of Technology -->
+            <div class="timeline-item">
+              <div class="timeline-marker">
+                <i class="fa-solid fa-graduation-cap"></i>
+              </div>
+              <div class="timeline-content card-glass">
+                <div class="timeline-header">
+                  <div>
+                    <span class="timeline-badge current">Current Education</span>
+                    <h3 class="timeline-title">Bachelor of Technology (B.Tech)</h3>
+                    <h4 class="timeline-institution">
+                      <i class="fa-solid fa-building-columns"></i> Newton School of Technology
+                    </h4>
+                  </div>
+                  <span class="timeline-date">2026 – Present (1st Year)</span>
+                </div>
+                <p class="timeline-desc">
+                  Pursuing an industry-aligned B.Tech program focusing on Computer Science, modern software development, AI, and hands-on project creation.
+                </p>
+                <div class="coursework-tags">
+                  <span class="tag">Programming Fundamentals</span>
+                  <span class="tag">Data Structures Basics</span>
+                  <span class="tag">Web Development</span>
+                  <span class="tag">Mathematics for Computing</span>
+                  <span class="tag">Design & Innovation</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 2: High School / Secondary Education -->
+            <div class="timeline-item">
+              <div class="timeline-marker">
+                <i class="fa-solid fa-school"></i>
+              </div>
+              <div class="timeline-content card-glass">
+                <div class="timeline-header">
+                  <div>
+                    <span class="timeline-badge">Completed</span>
+                    <h3 class="timeline-title">Senior Secondary Education (Class XII)</h3>
+                    <h4 class="timeline-institution">
+                      <i class="fa-solid fa-award"></i> Science & Mathematics Stream
+                    </h4>
+                  </div>
+                  <span class="timeline-date">Graduated with Distinction</span>
+                </div>
+                <p class="timeline-desc">
+                  Built strong analytical foundations in Mathematics, Physics, and Computer Science, sparking my dedication to pursue engineering and software development.
+                </p>
+              </div>
+            </div>
+
+            <!-- Item 3: Tech Explorations & Hackathons -->
+            <div class="timeline-item">
+              <div class="timeline-marker">
+                <i class="fa-solid fa-flag-checkered"></i>
+              </div>
+              <div class="timeline-content card-glass">
+                <div class="timeline-header">
+                  <div>
+                    <span class="timeline-badge milestone">Milestone</span>
+                    <h3 class="timeline-title">Active Tech Explorer & Learner</h3>
+                    <h4 class="timeline-institution">
+                      <i class="fa-solid fa-laptop-code"></i> Projects, Workshops & Self-Study
+                    </h4>
+                  </div>
+                  <span class="timeline-date">Continuous</span>
+                </div>
+                <p class="timeline-desc">
+                  Regularly participating in college coding challenges, building interactive web apps, and engaging in collaborative student initiatives to push boundaries.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Featured Creations</span>
+          <h2 class="section-title">Projects & Experiments</h2>
+          <p class="section-subtitle">
+            A selection of creative coding projects, web designs, and interactive tools I've built.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <article class="project-card card-glass">
+            <div class="project-visual">
+              <div class="project-preview-mockup mockup-1">
+                <div class="mockup-header">
+                  <span class="mock-dot red"></span>
+                  <span class="mock-dot yellow"></span>
+                  <span class="mock-dot green"></span>
+                  <span class="mock-title">portfolio-v1.html</span>
+                </div>
+                <div class="mockup-body">
+                  <div class="code-line"><span class="code-tag">&lt;div</span> <span class="code-attr">class</span>=<span class="code-str">"creator"</span><span class="code-tag">&gt;</span></div>
+                  <div class="code-line indent">Drishti Jain • NST</div>
+                  <div class="code-line"><span class="code-tag">&lt;/div&gt;</span></div>
+                  <div class="code-line"><span class="code-tag">&lt;h1&gt;</span>Building with Passion &amp; Elegance<span class="code-tag">&lt;/h1&gt;</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-meta">
+                <span class="project-category">Web Experience</span>
+                <span class="project-status">Live</span>
+              </div>
+              <h3 class="project-title">Elegant Personal Portfolio</h3>
+              <p class="project-desc">
+                A modern, responsive portfolio with dark/light theming, smooth micro-interactions, glassmorphism design, and an interactive contact interface.
+              </p>
+              <div class="project-tags">
+                <span>HTML5</span>
+                <span>CSS3 Variables</span>
+                <span>JavaScript</span>
+                <span>Responsive UI</span>
+              </div>
+              <div class="project-actions">
+                <a href="#home" class="btn btn-sm btn-primary">Live Demo <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-ghost"><i class="fa-brands fa-github"></i> Code</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card card-glass">
+            <div class="project-visual">
+              <div class="project-preview-mockup mockup-2">
+                <div class="mockup-header">
+                  <span class="mock-dot red"></span>
+                  <span class="mock-dot yellow"></span>
+                  <span class="mock-dot green"></span>
+                  <span class="mock-title">interactive-calculator.js</span>
+                </div>
+                <div class="mockup-body interactive-mini-calc">
+                  <div class="calc-screen">3.14159 × Innovation</div>
+                  <div class="calc-keys-preview">
+                    <span class="k">AC</span><span class="k">±</span><span class="k">%</span><span class="k op">÷</span>
+                    <span class="k">7</span><span class="k">8</span><span class="k">9</span><span class="k op">×</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-meta">
+                <span class="project-category">Interactive Utility</span>
+                <span class="project-status">Completed</span>
+              </div>
+              <h3 class="project-title">Smart Calculator & Unit Converter</h3>
+              <p class="project-desc">
+                A feature-rich web calculator with keyboard input support, calculation history memory, light/dark mode, and real-time conversion features.
+              </p>
+              <div class="project-tags">
+                <span>JavaScript</span>
+                <span>CSS Grid</span>
+                <span>Event Listeners</span>
+                <span>Algorithm</span>
+              </div>
+              <div class="project-actions">
+                <button class="btn btn-sm btn-primary demo-modal-btn" data-project="Smart Calculator">
+                  View Details <i class="fa-solid fa-circle-info"></i>
+                </button>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-ghost"><i class="fa-brands fa-github"></i> Code</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card card-glass">
+            <div class="project-visual">
+              <div class="project-preview-mockup mockup-3">
+                <div class="mockup-header">
+                  <span class="mock-dot red"></span>
+                  <span class="mock-dot yellow"></span>
+                  <span class="mock-dot green"></span>
+                  <span class="mock-title">study-task-tracker.app</span>
+                </div>
+                <div class="mockup-body todo-preview">
+                  <div class="todo-item done"><i class="fa-solid fa-check"></i> Master CSS Flexbox & Grid</div>
+                  <div class="todo-item done"><i class="fa-solid fa-check"></i> Practice Python Data Structures</div>
+                  <div class="todo-item current"><i class="fa-regular fa-circle"></i> Build Innovation Tech Pitch</div>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-meta">
+                <span class="project-category">Productivity Web App</span>
+                <span class="project-status">Completed</span>
+              </div>
+              <h3 class="project-title">Focus & Study Task Manager</h3>
+              <p class="project-desc">
+                An intuitive productivity application for students to organize assignments, set priorities, and track study milestones with localStorage persistence.
+              </p>
+              <div class="project-tags">
+                <span>HTML/CSS</span>
+                <span>LocalStorage API</span>
+                <span>UI/UX</span>
+                <span>Productivity</span>
+              </div>
+              <div class="project-actions">
+                <button class="btn btn-sm btn-primary demo-modal-btn" data-project="Focus & Study Task Manager">
+                  View Details <i class="fa-solid fa-circle-info"></i>
+                </button>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-ghost"><i class="fa-brands fa-github"></i> Code</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4 -->
+          <article class="project-card card-glass">
+            <div class="project-visual">
+              <div class="project-preview-mockup mockup-4">
+                <div class="mockup-header">
+                  <span class="mock-dot red"></span>
+                  <span class="mock-dot yellow"></span>
+                  <span class="mock-dot green"></span>
+                  <span class="mock-title">algo-visualizer.py</span>
+                </div>
+                <div class="mockup-body algo-bars-preview">
+                  <div class="bar-chart">
+                    <span style="height: 30%;"></span>
+                    <span style="height: 60%;"></span>
+                    <span style="height: 45%;"></span>
+                    <span style="height: 85%;"></span>
+                    <span style="height: 70%;"></span>
+                    <span style="height: 95%;"></span>
+                  </div>
+                  <div class="algo-label">Sorting & Search Visuals</div>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-meta">
+                <span class="project-category">Logic & Algorithms</span>
+                <span class="project-status">In Progress</span>
+              </div>
+              <h3 class="project-title">Algorithm Logic Explorer</h3>
+              <p class="project-desc">
+                Visualizing basic sorting and search algorithms (Bubble Sort, Binary Search) to intuitively understand time complexity and execution steps.
+              </p>
+              <div class="project-tags">
+                <span>Python</span>
+                <span>Data Structures</span>
+                <span>Visualization</span>
+                <span>CS Core</span>
+              </div>
+              <div class="project-actions">
+                <button class="btn btn-sm btn-primary demo-modal-btn" data-project="Algorithm Logic Explorer">
+                  View Details <i class="fa-solid fa-circle-info"></i>
+                </button>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-ghost"><i class="fa-brands fa-github"></i> Code</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Currently Exploring & Hobbies Section -->
+    <section class="section exploration-section">
+      <div class="container">
+        <div class="card-glass exploration-card">
+          <div class="exploration-content">
+            <span class="section-tag"><i class="fa-solid fa-radar"></i> In the Lab</span>
+            <h3 class="exploration-title">What I'm Currently Learning & Exploring</h3>
+            <p class="exploration-desc">
+              Tech never stands still, and neither do I. Here is what is on my radar right now as I progress through my B.Tech journey at Newton School of Technology:
+            </p>
+            <div class="exploration-chips">
+              <span class="chip"><i class="fa-brands fa-react"></i> React.js & Component Architecture</span>
+              <span class="chip"><i class="fa-solid fa-database"></i> SQL & Relational Databases</span>
+              <span class="chip"><i class="fa-solid fa-robot"></i> Generative AI & Prompt Engineering</span>
+              <span class="chip"><i class="fa-solid fa-sitemap"></i> Data Structures & Algorithms (DSA)</span>
+              <span class="chip"><i class="fa-solid fa-pen-nib"></i> UI/UX Micro-Interactions</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section (Working & Interactive) -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Get in Touch</span>
+          <h2 class="section-title">Let's Connect & Create Together</h2>
+          <p class="section-subtitle">
+            Whether you want to collaborate on an innovative project, discuss tech, or just say hello—I'd love to hear from you!
+          </p>
+        </div>
+
+        <div class="contact-wrapper">
+          <!-- Contact Info Cards -->
+          <div class="contact-info-column">
+            <div class="contact-info-card card-glass">
+              <div class="contact-card-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div class="contact-card-details">
+                <h4>Email Me</h4>
+                <p>Have a question or proposal?</p>
+                <div class="email-copy-wrapper">
+                  <a href="mailto:drishti.jain@example.com" class="contact-link" id="emailText">drishti.jain@example.com</a>
+                  <button class="copy-btn" id="copyEmailBtn" title="Copy email address" aria-label="Copy email">
+                    <i class="fa-regular fa-copy"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-info-card card-glass">
+              <div class="contact-card-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+              <div class="contact-card-details">
+                <h4>Campus & College</h4>
+                <p>Newton School of Technology</p>
+                <span class="contact-meta">B.Tech First Year Student</span>
+              </div>
+            </div>
+
+            <div class="contact-info-card card-glass">
+              <div class="contact-card-icon"><i class="fa-solid fa-share-nodes"></i></div>
+              <div class="contact-card-details">
+                <h4>Social & Tech Presence</h4>
+                <p>Connect with me across the web:</p>
+                <div class="social-links">
+                  <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-link" title="LinkedIn">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                  </a>
+                  <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-link" title="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+                  <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-link" title="Twitter / X">
+                    <i class="fa-brands fa-x-twitter"></i>
+                  </a>
+                  <a href="mailto:drishti.jain@example.com" class="social-link" title="Direct Email">
+                    <i class="fa-solid fa-paper-plane"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Interactive Contact Form -->
+          <div class="contact-form-column card-glass">
+            <h3 class="form-title"><i class="fa-regular fa-envelope-open"></i> Send a Message</h3>
+            <p class="form-subtitle">Fill in the fields below and I'll get back to you promptly.</p>
+
+            <form id="contactForm" class="contact-form" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="userName">Your Name <span class="required">*</span></label>
+                  <div class="input-wrapper">
+                    <i class="fa-regular fa-user input-icon"></i>
+                    <input type="text" id="userName" name="name" placeholder="e.g. Alex Morgan" required />
+                  </div>
+                  <span class="error-msg" id="nameError">Please enter your name.</span>
+                </div>
+
+                <div class="form-group">
+                  <label for="userEmail">Your Email <span class="required">*</span></label>
+                  <div class="input-wrapper">
+                    <i class="fa-regular fa-envelope input-icon"></i>
+                    <input type="email" id="userEmail" name="email" placeholder="alex@example.com" required />
+                  </div>
+                  <span class="error-msg" id="emailError">Please enter a valid email address.</span>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="userSubject">Subject <span class="required">*</span></label>
+                <div class="input-wrapper">
+                  <i class="fa-solid fa-pen-to-square input-icon"></i>
+                  <input type="text" id="userSubject" name="subject" placeholder="Project Collaboration / Quick Greeting" required />
+                </div>
+                <span class="error-msg" id="subjectError">Please provide a subject.</span>
+              </div>
+
+              <div class="form-group">
+                <label for="userMessage">Your Message <span class="required">*</span></label>
+                <div class="input-wrapper textarea-wrapper">
+                  <i class="fa-regular fa-comment-dots input-icon"></i>
+                  <textarea id="userMessage" name="message" rows="5" placeholder="Hi Drishti, I came across your portfolio and wanted to connect about..." required></textarea>
+                </div>
+                <span class="error-msg" id="messageError">Please type your message (min 10 characters).</span>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-submit" id="submitBtn">
+                <span class="btn-text">Send Message</span>
+                <i class="fa-solid fa-paper-plane"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#home" class="nav-brand">
+            <span class="brand-badge">DJ</span>
+            <span class="brand-name">Drishti<span class="accent-dot">.</span></span>
+          </a>
+          <p class="footer-tagline">
+            First-Year B.Tech Student at Newton School of Technology. Transforming curiosity and code into elegant digital experiences.
+          </p>
+        </div>
+
+        <div class="footer-nav">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-connect">
+          <h4>Connect</h4>
+          <p>Always excited to connect with developers, mentors, and fellow learners.</p>
+          <div class="social-links footer-socials">
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-link" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-link" title="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-link" title="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="mailto:drishti.jain@example.com" class="social-link" title="Email"><i class="fa-solid fa-envelope"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Drishti Jain. Built with passion, HTML & CSS. All rights reserved.</p>
+        <button id="backToTop" class="back-to-top" title="Back to top" aria-label="Back to top">
+          <i class="fa-solid fa-chevron-up"></i>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Interactive Project Details Modal -->
+  <div class="modal-overlay" id="projectModal">
+    <div class="modal-card card-glass">
+      <button class="modal-close" id="modalClose" aria-label="Close modal"><i class="fa-solid fa-xmark"></i></button>
+      <div class="modal-badge" id="modalCategory">Project Details</div>
+      <h3 class="modal-title" id="modalTitle">Project Title</h3>
+      <p class="modal-desc" id="modalDesc">Project description goes here...</p>
+      
+      <div class="modal-features">
+        <h4>Key Highlights:</h4>
+        <ul id="modalHighlights">
+          <li>Clean and structured code architecture.</li>
+          <li>Responsive design across all device breakpoints.</li>
+          <li>Designed with user experience and simplicity in mind.</li>
+        </ul>
+      </div>
+
+      <div class="modal-tech-stack" id="modalTechStack"></div>
+
+      <div class="modal-actions">
+        <button class="btn btn-secondary" id="modalDismiss">Close</button>
+        <a href="#contact" class="btn btn-primary" id="modalContact">Inquire / Collaborate</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast" id="toastNotification">
+    <div class="toast-icon" id="toastIcon"><i class="fa-solid fa-circle-check"></i></div>
+    <div class="toast-message" id="toastMessage">Success notification!</div>
+  </div>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>
+
